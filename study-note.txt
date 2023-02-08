@@ -59,7 +59,8 @@ git status && git add . && git commit -m '解决bug以及合并冲突 v4'
 
 #git不是git-hub（代码托管仓库）
 #创建仓库时，私有的是付费的，别人不可见；公共的是免费的，开源的，别人可见的
-
+git remote add origin https://github.com/...
+git push -u origin main
 
 
 
