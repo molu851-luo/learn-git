@@ -1,6 +1,8 @@
 2023-2-8
 learn to use git
 
+###### 1.1 一个人使用git ######
+
 cd file              #进入项目文件夹
 git init             #初始化，让git帮我们管理文件夹。在项目文件夹中，空白处右键选择git bash here后，在终端输入
 git status           #管理--检测当前文件夹下的文件状态。出现的红色文件（Untracked files）。我们的目的是生成版本，如何生成版本呢
@@ -32,6 +34,20 @@ git log              #会有用户和邮箱信息
 
 #回滚 回到之前的某个版本
 git reset --hard 版本号
+
+#回到之前的版本后，后悔了，需要之后的版本，但是git log只可以看到该版本之前的版本
+git reflog           #查到所有的版本信息，找到想要的版本，用git reset --hard 版本号 回去即可
+
+
+###### 2.2  ######
+git branch           #目前你所处在的分支
+git branch dev       #开发新分支
+git checkout dev     #从master分支切换到dev分支
+
+git checkout master  #切换回master主干
+git merge bug        #将bug合并回master
+git branch -d bug    #删除bug分支
+
 
 
 
