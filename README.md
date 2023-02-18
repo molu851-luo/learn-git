@@ -1,1 +1,3 @@
-# learn-git
+#studying-git
+
+#studying-python
